@@ -1,0 +1,20 @@
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "description": "A simple Express.js app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "mongodb": "^4.6.0",
+    "body-parser": "^1.20.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}
