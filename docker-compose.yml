@@ -25,6 +25,8 @@ services:
       - MYAPP_DB_PASSWORD=${MYAPP_DB_PASSWORD}
     volumes:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js
+      - ./my-data/db:/data/db # Volume for MongoDB data
+      - ./database/archive:/database/archive # Additional volume
     restart: always
 
   mongo-express:
