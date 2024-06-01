@@ -1,0 +1,13 @@
+# MongoDB settings
+MONGO_INITDB_ROOT_USERNAME=admin
+MONGO_INITDB_ROOT_PASSWORD=adminpass
+MYAPP_DB_USERNAME=myappuser
+MYAPP_DB_PASSWORD=myapppass
+
+# Mongo Express settings
+ME_CONFIG_BASICAUTH_USERNAME=newadmin
+ME_CONFIG_BASICAUTH_PASSWORD=newpass
+
+# Node.js settings
+MONGO_DB_USERNAME=myappuser
+MONGO_DB_PWD=myapppass

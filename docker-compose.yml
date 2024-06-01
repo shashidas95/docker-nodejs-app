@@ -12,6 +12,8 @@ services:
     depends_on:
       - mongodb
     restart: always
+    networks:
+      - mongo-network
 
   mongodb:
     image: mongo:latest
@@ -28,6 +30,8 @@ services:
       - ./my-data/db:/data/db # Volume for MongoDB data
       - ./database/archive:/database/archive # Additional volume
     restart: always
+    networks:
+      - mongo-network
 
   mongo-express:
     image: mongo-express:latest
@@ -43,3 +47,8 @@ services:
     depends_on:
       - mongodb
     restart: always
+    networks:
+      - mongo-network
+networks:
+    mongo-network:
+      driver: bridge
